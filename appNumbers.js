@@ -1,51 +1,33 @@
-const numero1 = 30,
-    numero2 = 20,
-    numero3 = 20.20,
-    numero4 = -1020,
-    numero5 = -3
+const producto1 = 'Pizza',
+    precio1 = 30,
+    producto2 = 'Hamburgueza',
+    precio2 = 40;
 
-let resultado;
+let html;
 
-resultado = numero1 + numero2
-
-resultado = numero1 - numero2
-
-resultado = numero1 * 2;
-
-resultado = numero1 / numero2;
-
-resultado = numero1 % numero2;
+// html = '<ul>' +
+//     '<li>Ordern: ' + producto1 + '</li>' +
+//     '<li>Precio: ' + precio1 + '</li>' +
+//     '<li>Ordern: ' + producto2 + '</li>' +
+//     '<li>Precio: ' + precio2 + '</li>' +
+//     '<li>Total: ' + (precio1 + precio2) + '</li>' +
+//     '</ul>'
 
 
-resultado = Math.PI;
+// Nueva forma
 
-resultado = Math.round(3.5);
+html = `
+    <ul>
+    <li>Orden: ${producto1}</li>
+    <li>Precio: ${precio1}</li>
+    <li>Orden: ${producto2}</li>
+    <li>Precio: ${precio2}</li>
+    <li>Total: ${total(precio1, precio2)}</li>
+    </ul>`;
 
-resultado = Math.ceil(2.1);
+function total(precio1, precio2) {
+    return precio1 + precio2
+}
 
-resultado = Math.floor(2.1);
-
-resultado = Math.sqrt(144)
-
-resultado = Math.abs(numero5);
-
-
-resultado = Math.pow(8, 3);
-
-resultado = Math.min(3, 5, 7, 8);
-
-resultado = Math.max(3, 5, 7, 8)
-
-resultado = Math.random() * 10;
-
-
-resultado = (10 + 20) * 5;
-
-resultado = (10 + 20 + 20 + 10 + 40) * .20;
-
-let puntaje = 10;
-
-
-
-
-console.log(puntaje)
+document.getElementById('app').innerHTML = html;
+console.log(html);
