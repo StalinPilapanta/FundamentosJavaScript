@@ -48,4 +48,20 @@ meses.reverse();
 let arreglo1 = [1, 2, 3];
 let arreglo2 = [5, 6, 7]
 
-console.log(arreglo1.concat(arreglo2));
+//console.log(arreglo1.concat(arreglo2));
+
+const frutas = ['Platano', 'Manzana', 'Fresa', 'Naranja']
+
+frutas.sort();
+
+//console.log(frutas)
+
+// Ordenar numeros
+
+arreglo1 = [, 3, 5, 1, 9, , 6, 0, 2, 57, 23, 100]
+
+arreglo1.sort(function(x, y) {
+    return x - y;
+});
+
+console.log(arreglo1);
