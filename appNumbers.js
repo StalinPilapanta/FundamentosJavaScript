@@ -1,33 +1,22 @@
-const producto1 = 'Pizza',
-    precio1 = 30,
-    producto2 = 'Hamburgueza',
-    precio2 = 40;
+// Arreglos
 
-let html;
+const numeros = [10, 20, 30, 40, 50];
 
-// html = '<ul>' +
-//     '<li>Ordern: ' + producto1 + '</li>' +
-//     '<li>Precio: ' + precio1 + '</li>' +
-//     '<li>Ordern: ' + producto2 + '</li>' +
-//     '<li>Precio: ' + precio2 + '</li>' +
-//     '<li>Total: ' + (precio1 + precio2) + '</li>' +
-//     '</ul>'
+//console.log(numeros[4])
+
+const mezclado = ['Hola', 20, true, null, false, undefined]
+
+//console.log(mezclado)
 
 
-// Nueva forma
+//Arreglos de string metodo distinto
 
-html = `
-    <ul>
-    <li>Orden: ${producto1}</li>
-    <li>Precio: ${precio1}</li>
-    <li>Orden: ${producto2}</li>
-    <li>Precio: ${precio2}</li>
-    <li>Total: ${total(precio1, precio2)}</li>
-    </ul>`;
+const meses = new Array('Enero', 'Febreo', 'Marzo', 'Abril')
 
-function total(precio1, precio2) {
-    return precio1 + precio2
-}
+//console.log(Array.isArray(meses))
 
-document.getElementById('app').innerHTML = html;
-console.log(html);
+//Anadir en un arreglo
+
+meses.push('Mayo');
+
+console.log(meses.indexOf('Abril'))
