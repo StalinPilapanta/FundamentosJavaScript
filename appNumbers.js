@@ -1,14 +1,8 @@
-obtenerDatos();
+const diaHoy = new Date();
 
-try {
-    datos()
-} catch (error) {
-    console.log(error);
-}
+let valor = diaHoy.getMonth();
+valor = diaHoy.getDay();
+valor = diaHoy.getFullYear();
 
-function obtenerDatos() {
-    console.log('Descargando...');
-    setTimeout(function() {
-        console.log('Completado.');
-    }, 3000);
-}
+console.log(diaHoy);
+console.log(valor);
