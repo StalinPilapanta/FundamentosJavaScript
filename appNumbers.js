@@ -1,10 +1,18 @@
-let autos = [
-    { marca: 'Mustang', motor: 6 },
-    { marca: 'Camaro', motor: 6.2 },
-    { marca: 'Callenge', motor: 6.3 },
-]
+// function saludar(name = 'Visitante') {
+
+//     let nombre = `Hola ${name}`
+
+//     document.getElementById('app').innerHTML = nombre
+//         //console.log('Hola')
+// }
+
+// saludar('Stalin');
 
 
-for (let i = 0; i <= autos.length; i++) {
-    console.log(`${i}.- modelo: ${autos[i].marca} y motor: ${autos[i].motor}`);
+function sumar(a = 5, b = 4) {
+    return a + b;
 }
+
+
+console.log(sumar(3, 4));
+console.log(sumar(5));
