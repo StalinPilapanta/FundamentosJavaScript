@@ -1,18 +1,19 @@
-// function saludar(name = 'Visitante') {
-
-//     let nombre = `Hola ${name}`
-
-//     document.getElementById('app').innerHTML = nombre
-//         //console.log('Hola')
-// }
-
-// saludar('Stalin');
-
-
-function sumar(a = 5, b = 4) {
-    return a + b;
-}
+    const musica = {
+        reproducir: function(id) {
+            console.log(`Reproduciendo musica con id: ${id}`)
+        },
+        pause: function(id) {
+            console.log(`Pausando la musica con id: ${id}`)
+        }
+    }
 
 
-console.log(sumar(3, 4));
-console.log(sumar(5));
+    musica.reproducir(2);
+
+    musica.pause(3);
+
+    musica.borrar = function(id) {
+        console.log(`Borrando la musica con id: ${id}`)
+    }
+
+    musica.borrar(2);
