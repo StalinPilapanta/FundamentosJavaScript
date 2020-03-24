@@ -1,67 +1,10 @@
-// Arreglos
-
-const numeros = [10, 20, 30, 40, 50];
-
-//console.log(numeros[4])
-
-const mezclado = ['Hola', 20, true, null, false, undefined]
-
-//console.log(mezclado)
+let autos = [
+    { marca: 'Mustang', motor: 6 },
+    { marca: 'Camaro', motor: 6.2 },
+    { marca: 'Callenge', motor: 6.3 },
+]
 
 
-//Arreglos de string metodo distinto
-
-const meses = new Array('Enero', 'Febreo', 'Marzo', 'Abril')
-
-//console.log(Array.isArray(meses))
-
-//Anadir en un arreglo
-
-meses.push('Mayo');
-
-//anadir al inicio del arreglo
-
-meses.unshift('Meses 0')
-
-//console.log(meses.indexOf('Abril'))
-
-meses.pop()
-
-//Eliminar un elemento del inicio
-
-meses.shift();
-
-//Quitar de un rango
-
-meses.splice(2, 1)
-
-
-meses.reverse();
-
-
-//console.log(meses)
-
-//Unir arreaglos
-
-
-
-let arreglo1 = [1, 2, 3];
-let arreglo2 = [5, 6, 7]
-
-//console.log(arreglo1.concat(arreglo2));
-
-const frutas = ['Platano', 'Manzana', 'Fresa', 'Naranja']
-
-frutas.sort();
-
-//console.log(frutas)
-
-// Ordenar numeros
-
-arreglo1 = [, 3, 5, 1, 9, , 6, 0, 2, 57, 23, 100]
-
-arreglo1.sort(function(x, y) {
-    return x - y;
-});
-
-console.log(arreglo1);
+for (let i = 0; i <= autos.length; i++) {
+    console.log(`${i}.- modelo: ${autos[i].marca} y motor: ${autos[i].motor}`);
+}
