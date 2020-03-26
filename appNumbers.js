@@ -1,8 +1,8 @@
-const diaHoy = new Date();
+const pendientes = ['Comer', 'Tarea', 'Aprender JavaScript'];
 
-let valor = diaHoy.getMonth();
-valor = diaHoy.getDay();
-valor = diaHoy.getFullYear();
 
-console.log(diaHoy);
-console.log(valor);
+pendientes.forEach(function(pendientes, index) {
+    console.log(`Aprender ${index} ${pendientes}`);
+})
+
+console.log(pendientes);
