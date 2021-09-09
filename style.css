@@ -1,0 +1,103 @@
+body {
+    background-image: url("https://www.muycomputer.com/wp-content/uploads/2021/04/Fallecidos-accidente-Tesla-Model-S-sin-conductor-e1618826619114.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    box-sizing: border-box;
+    color: black;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 100px;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+.header_nav ul {
+    display: flex;
+    font-size: 25px;
+}
+
+.main {
+    width: 800px;
+    height: 400px;
+    margin: 0 auto;
+    color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    margin-top: 50px;
+    padding: 20px 50px;
+    background-color: rgba(255, 255, 255, 0.3);
+    display: flex;
+    justify-content: space-around;
+}
+
+input {
+    margin-top: 10px;
+    height: 30px;
+    padding: 0 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-style: none;
+    outline: none;
+}
+
+.card--main {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main--formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.main--formulario label {
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+button {
+    margin-top: 10px;
+    background: transparent;
+    color: black;
+    letter-spacing: 3px;
+    height: 50px;
+    font-size: 30px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid whitesmoke;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    padding: 0 30px;
+    align-items: center;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-top: 60px;
+    height: 100px
+}

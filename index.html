@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1><a href="">Repaso Objetos JS</a></h1>
+        <nav class="header_nav">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Contactos</a></li>
+                <li><a href="">Proyectos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="main">
+        <section class="card--main">
+            <h2>Registor de coches</h2>
+            <form action="" class="main--formulario">
+                <label for="">Ingresa la Cantidad de coches: </label>
+                <input type="number" id="cantidadCoches" placeholder="Cantidad de coches">
+                <input type="text" id="marca" placeholder="Marca">
+                <input type="text" id="modelo" placeholder="Modelo">
+                <input type="number" id="annio" placeholder="Año">
+                <button onclick="ingresocoche()" type="button">Guardar</button>
+            </form>
+        </section>
+
+        <section class="card--coches">
+            <h2>Tus coches ingresados son: </h2>
+            <p>Marca de coche: </p>
+            <label for="" id="marcaCoche"></label>
+            <p>Modelo de coche: </p>
+            <label for="" id="modeloCoche"></label>
+            <p>Año de coche: </p>
+            <label for="" id="annioCoche"></label>
+        </section>
+    </section>
+
+    <footer>
+        <h3>Declaracion de privacidad</h3>
+        <h3>Centro de ayuda</h3>
+        <h3>Hecho con amor por <a target="_blanck" href="https://github.com/StalinPilapanta/">Stalin Pilapanta</a></h3>
+    </footer>
+    <script src="pruebas.js"></script>
+</body>
+
+</html>
