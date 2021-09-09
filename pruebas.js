@@ -30,7 +30,7 @@ function ingresocoche() {
         let pintaMarca = document.getElementById("marcaCoche")
         pintaMarca.innerText = marca
         let pintaModelo = document.getElementById("modeloCoche")
-        pintaMarca.innerText = modelo
+        pintaModelo.innerText = modelo
         let pintaAnnio = document.getElementById("annioCoche")
         pintaAnnio.innerText = annio
     }
