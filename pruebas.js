@@ -21,7 +21,7 @@ function ingresocoche() {
 
     for (let i = 0; i <= cantidad; i++) {
 
-        let valor = prompt("Ingrese la cantidad")
+
         let auto = new autos()
         auto.marca = marca
         auto.modelo = modelo
